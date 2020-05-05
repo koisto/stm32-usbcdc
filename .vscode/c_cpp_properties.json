@@ -1,0 +1,24 @@
+{
+    "configurations": [
+        {
+            "name": "stm32",
+            "includePath": [
+                "Inc",
+                "/home/james/STM32Cube/Repository/STM32Cube_FW_F1_V1.8.0/Drivers/STM32F1xx_HAL_Driver/Inc",
+                "/home/james/STM32Cube/Repository/STM32Cube_FW_F1_V1.8.0/Drivers/STM32F1xx_HAL_Driver/Inc/Legacy",
+                "/home/james/STM32Cube/Repository/STM32Cube_FW_F1_V1.8.0/Drivers/CMSIS/Device/ST/STM32F1xx/Include",
+                "/home/james/STM32Cube/Repository/STM32Cube_FW_F1_V1.8.0/Drivers/CMSIS/Include",
+                "/home/james/STM32Cube/Repository/STM32Cube_FW_F1_V1.8.0/Middlewares/ST/STM32_USB_Device_Library/Core/Inc",
+                "/home/james/STM32Cube/Repository/STM32Cube_FW_F1_V1.8.0/Middlewares/ST/STM32_USB_Device_Library/Class/CDC/Inc"    
+            ],
+            "defines": [
+                "STM32F103xB"
+            ],
+            "compilerPath": "/usr/bin/arm-none-eabi-gcc",
+            "cStandard": "c11",
+            "cppStandard": "c++17",
+            "intelliSenseMode": "gcc-x64"
+        }
+    ],
+    "version": 4
+}

@@ -1,0 +1,37 @@
+{
+    // See https://go.microsoft.com/fwlink/?LinkId=733558
+    // for the documentation about the tasks.json format
+    "version": "2.0.0",
+    "tasks": [
+        {
+            "label": "build",
+            "type": "shell",
+            "command": "make -f project.mk",
+            "args": [],
+            "problemMatcher": [
+                "$gcc"
+            ]
+        },
+        {
+            "label": "clean",
+            "type": "shell",
+            "command": "make -f project.mk clean",
+            "args": [],
+            "problemMatcher": []
+        },
+        {
+            "label": "erase",
+            "type": "shell",
+            "command": "make -f project.mk erase",
+            "args": [],
+            "problemMatcher": []
+        },
+        {
+            "label": "flash",
+            "type": "shell",
+            "command": "make -f project.mk flash",
+            "args": [],
+            "problemMatcher": []
+        }
+    ]
+}
