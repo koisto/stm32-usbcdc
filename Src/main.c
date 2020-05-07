@@ -119,6 +119,8 @@ int main(void)
     
 
     CDC_Transmit_FS("Hello\r\n", 5);
+    CDC_Transmit_FS(GIT_HASH, 8);
+  
   }
   /* USER CODE END 3 */
 }
