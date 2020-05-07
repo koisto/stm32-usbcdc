@@ -24,7 +24,7 @@
 
 /* Private includes ----------------------------------------------------------*/
 /* USER CODE BEGIN Includes */
-
+#include <stdio.h>
 /* USER CODE END Includes */
 
 /* Private typedef -----------------------------------------------------------*/
@@ -95,6 +95,9 @@ int main(void)
   MX_USB_DEVICE_Init();
   /* USER CODE BEGIN 2 */
   UsbPullUpOff();
+  setvbuf(stdin, NULL, _IONBF, 0);
+  setvbuf(stdout, NULL, _IONBF, 0);
+  setvbuf(stderr, NULL, _IONBF, 0);
   /* USER CODE END 2 */
 
   /* Infinite loop */
@@ -118,8 +121,7 @@ int main(void)
     }
     
 
-    CDC_Transmit_FS("Hello\r\n", 5);
-    CDC_Transmit_FS(GIT_HASH, 8);
+    printf("Git hash is %s\r\n", GIT_HASH);
   
   }
   /* USER CODE END 3 */
